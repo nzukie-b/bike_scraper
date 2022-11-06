@@ -12,7 +12,7 @@ To start the scraper run the following command from the `bike_scraper` directory
 scrapy crawl bikeSpider
 ```
 
-If you would like to output a file for the results of the web scraper you can append `-O FILE` to the above command, where `FILE` is one of the following formats: `.json`, `.jsonl`, `.csv` or `.xml`. The [Scrapy documentation](https://docs.scrapy.org/en/latest/topics/commands.html#crawl) has more infomation on  this.
+If you would like to output a file for the results of the web scraper you can append `-O FILE` to the above command, where `FILE` is one of the following formats: `.json`, `.jsonl`, `.csv` or `.xml`. The [Scrapy documentation](https://docs.scrapy.org/en/latest/topics/commands.html#crawl) has more infomation on the command line options.
 
 ## Run  Info
 On my local machine, it took ~30 minutes to scrape 1309 images (59MB in total) from 234 listings.
