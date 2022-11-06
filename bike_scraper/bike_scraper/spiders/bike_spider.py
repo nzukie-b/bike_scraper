@@ -6,7 +6,7 @@ class BikeSpider(scrapy.Spider):
     name = "bikeSpider"
 
     def start_requests(self):
-        bike_listing = pycraigslist.forsale.bia(site="worcester", has_image=True).search(limit=1)
+        bike_listing = pycraigslist.forsale.bia(site="worcester", has_image=True).search()
         self.log(bike_listing)
         urls = [result.get('url') for result in bike_listing]
         for url in urls:
